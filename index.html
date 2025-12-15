@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Muhammad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">&lt;/&gt; Building Digital Solutions</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">My Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero reveal">
+    <p class="subtitle">Full-Stack Developer</p>
+
+    <h1 class="gradient-text">
+      Hi, I’m Muhammad.<br>
+      <span id="typing"></span>
+    </h1>
+
+    <p class="desc">
+      I’m passionate about building modern, scalable, and efficient web applications.
+      I enjoy turning ideas into real digital products and continuously improving my
+      skills through hands-on practice, experimentation, and problem-solving.
+      My focus is on clean design, strong fundamentals, and long-term growth.
+    </p>
+
+    <div class="buttons">
+      <button onclick="scrollToSection('work')">View My Work</button>
+      <button class="outline" onclick="scrollToSection('contact')">Get in Touch</button>
+    </div>
+  </section>
+
+  <!-- MY WORK (MESSAGE) -->
+  <section id="work" class="work reveal">
+    <h2 class="gradient-text">My Work</h2>
+
+    <div class="work-box">
+      <p>
+        I’m currently focused on strengthening my skills, learning best practices,
+        and building a strong foundation before publishing major projects.
+        Every great developer starts somewhere — this space will soon showcase
+        real-world applications, experiments, and creative ideas.
+      </p>
+
+      <p class="work-note">
+        🚀 Projects coming soon. Growth in progress.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills reveal">
+    <h2 class="gradient-text">My Skills</h2>
+    <p class="skills-text">Technologies I work with</p>
+
+    <div class="skills-container">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Python</span>
+      <span>Git</span>
+      <span>SQL</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact-box">
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+    <input type="email" name="from_email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="status"></p>
+</div>
+
+
+  <!-- SOCIALS -->
+  <footer class="socials reveal">
+    <p>Connect with me</p>
+
+    <div class="social-icons">
+      <!-- Replace src and href later -->
+      <a href="#" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="#" target="_blank">
+        <img src="tiktok.png" alt="TikTok">
+      </a>
+      <a href="#" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("a11ZVhf-P-vlq2UF8");
+</script>
+
+</body>
+</html>

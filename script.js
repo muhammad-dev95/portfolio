@@ -15,19 +15,32 @@ typeEffect();
 // Scroll reveal
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function revealOnScroll() {
   reveals.forEach(section => {
     const top = section.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
       section.classList.add("active");
     }
   });
-});
+}
+
+// Run on scroll
+window.addEventListener("scroll", revealOnScroll);
+
+// Run once when page loads
+window.addEventListener("load", revealOnScroll);
 
 // Button scroll
 function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  target.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
 }
+
 
 const form = document.getElementById("contact-form");
 const statusText = document.getElementById("status");

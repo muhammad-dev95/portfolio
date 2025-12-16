@@ -258,3 +258,7 @@ button {
   transform: scale(1.2);
   box-shadow: 0 0 12px #1e90ff;
 }
+
+section {
+  scroll-margin-top: 110px;
+}
